@@ -53,7 +53,9 @@ Docker enables developers to easily pack, ship, and run any application as a lig
     [], ...}
 
     ### /category/get
-
+    
+    - Get all category
+        
         ```javascript
         [{
             "_id": "5dfdc8d7b0fe8f00142bb693",
@@ -69,12 +71,13 @@ Docker enables developers to easily pack, ship, and run any application as a lig
             "category": "/samsung",
             "child_categories": []
         }]
+        ```
 
 4)  Get all products by a category.
 
-        ### /product/get
+    ### /product/get
 
-        - Get all product by category or categories
+    - Get all product by category or categories
 
         ```javascript
         {
@@ -82,7 +85,7 @@ Docker enables developers to easily pack, ship, and run any application as a lig
         }
         ```
 
-        ````javascript
+        ```javascript
         [{
             "_id": "5dfdbe93f8d6d600133b64ed",
             "price": 4356.5,
