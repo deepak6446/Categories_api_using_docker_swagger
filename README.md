@@ -54,17 +54,55 @@ Docker enables developers to easily pack, ship, and run any application as a lig
 
     ### /category/get
 
+        ```javascript
+        [{
+            "_id": "5dfdc8d7b0fe8f00142bb693",
+            "parent_categories": "/",
+            "category": "/mobiles",
+            "child_categories": [
+                "5dfdc8dab0fe8f00142bb694"
+            ]
+        },
+        {
+            "_id": "5dfdc8dab0fe8f00142bb694",
+            "parent_categories": "/mobiles",
+            "category": "/samsung",
+            "child_categories": []
+        }]
+
 4)  Get all products by a category.
 
-    ### /product/get
+        ### /product/get
 
-    - Get all product by category or categories
+        - Get all product by category or categories
 
-    ```javascript
-    {
-        "categories": ["/samsung"]
-    }
-    ```
+        ```javascript
+        {
+            "categories": ["/samsung"]
+        }
+        ```
+
+        ````javascript
+        [{
+            "_id": "5dfdbe93f8d6d600133b64ed",
+            "price": 4356.5,
+            "categories": [
+                "/samsung"
+            ],
+            "product": "new name",
+            "__v": 0
+        },
+        {
+            "_id": "5dfdc0b724e1a800137ffa9c",
+            "price": 4356.5,
+            "categories": [
+                "/samsung"
+            ],
+            "product": "samsung-galaxy-a22s",
+            "__v": 0
+        }]
+
+        ```
 
 5.  Update product details (name,price,etc)
 
@@ -79,3 +117,7 @@ Docker enables developers to easily pack, ship, and run any application as a lig
         "price": 78889
     }
     ```
+
+```
+
+```

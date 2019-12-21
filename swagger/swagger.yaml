@@ -83,7 +83,7 @@ paths:
           description: ''
           headers: {}
   /product/get:
-    post:
+    get:
       description: 'Get all products by a category.'
       summary: Get all products
       tags:

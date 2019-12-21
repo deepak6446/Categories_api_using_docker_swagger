@@ -27,7 +27,7 @@ router.get("/ping", async (req, res) => {
 router.post("/category/add", addCategory);
 router.get("/category/get", getCategory);
 router.post("/product/add", addProduct);
-router.post("/product/get", getProduct);
+router.get("/product/get", getProduct);
 router.put("/product/update", updateProduct);
 
 module.exports = router;
