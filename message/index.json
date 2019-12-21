@@ -1,0 +1,71 @@
+{
+  "mongoError": {
+    "status": 500,
+    "response": {
+      "error": "unexpected exceptions are occured while processing request"
+    }
+  },
+  "categoryCreated": {
+    "status": 200,
+    "response": {
+      "message": "new category created successfully"
+    }
+  },
+  "categoryExistErr": {
+    "status": 406,
+    "response": {
+      "error": "category already exist, try editing it"
+    }
+  },
+  "categoryNotFound": {
+    "status": 200,
+    "response": {
+      "error": "Category not found"
+    }
+  },
+  "categoryRequired": {
+    "status": 406,
+    "response": {
+      "error": "category name is required"
+    }
+  },
+  "productRequired": {
+    "status": 406,
+    "response": {
+      "error": "product and category is required"
+    }
+  },
+  "productFind": {
+    "status": 200
+  },
+  "productExistErr": {
+    "status": 406,
+    "response": {
+      "error": "product already exist, try editing it"
+    }
+  },
+  "productCreated": {
+    "status": 200,
+    "response": {
+      "message": "new product created successfully"
+    }
+  },
+  "productUpdateErr": {
+    "status": 406,
+    "response": {
+      "error": "product_update_name or price is required"
+    }
+  },
+  "productUpdated": {
+    "status": 200,
+    "response": {
+      "message": "product updated successfully"
+    }
+  },
+  "productNotFound": {
+    "status": 406,
+    "response": {
+      "error": "product not found"
+    }
+  }
+}
